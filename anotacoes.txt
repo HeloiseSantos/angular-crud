@@ -11,3 +11,20 @@ CRIAÇÃO DO PROJETO
 
 DICA
 - Deixar sempre 3 abas do terminal abertas: 1 para rodar o server do frontend, 1 para rodar o backend e uma para utilizar para comandos (criação de componentes, etc).
+
+CONHECENDO OS ARQUIVOS DO PROJETO
+- Como indicamos a criação do projeto como --minimal, no arquivo angular.json é importante setar as propriedades "inlineTemplate" como false e "inlineStyle" como false para que o HTML e o CSS fiquem em arquivos separados. Caso não defina isso como false, todo HTML, CSS e TS ficarão em apenas um arquivo e isso não é uma boa prática.;
+
+MÓDULOS
+- main.ts: carrega o módulo que irá inicializar a aplicação (AppModule), que é o módulo principal;
+- app.module.ts: bootstrap: [AppComponent] aponta para o componente que será carregado nossa aplicação;
+
+PASTAS
+- assets: pode colocar arquivos estáticos, imagens, arquivos de fontes...
+- environments: onde podemos colocar variáveis de ambiente;
+    environments.ts: variáveis de ambiente de desenvolvimento;
+    environments.prod.ts: variáveis de ambiente de produção;
+- app: pasta do primeiro componente;
+- src: pasta onde iremos criar outros componentes;
+
+-index.html: chama o componente principal da aplicação e partir deste componente, todos os outros serão carregados através desta única página, por isso chamamos de SINGLE PAGE APPLICATION;
