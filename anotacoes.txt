@@ -7,4 +7,4 @@ CRIAÇÃO DO PROJETO
 5. ng new frontend --minimal: --minimal tira alguns arquivos desnecessários;
 6. selecionar se terá routing: y
 7. É nessário escolher se será css ou um pré-processador css;
-
+8. Inicializar prjeto: entrar na pasta frontend e utilizar npm start;
