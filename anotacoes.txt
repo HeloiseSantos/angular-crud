@@ -1,0 +1,10 @@
+1. npm start: roda API;
+
+CRIAÇÃO DO PROJETO
+2. npm install -g @angular/cli: instala CLI do Angular para iniciar projeto;
+3. ng: help comandos do Angular;
+4. ng new nomeDoProjeto: para criar o projeto;
+5. ng new frontend --minimal: --minimal tira alguns arquivos desnecessários;
+6. selecionar se terá routing: y
+7. É nessário escolher se será css ou um pré-processador css;
+
