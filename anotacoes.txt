@@ -32,3 +32,4 @@ PASTAS
 AULA "HTML DO APPCOMPONENT
 - {{ nomeDaVariavel }} - double mustache - chama a variável declarada no component.ts. Ele irá interpretar o valor do nome e substituir pelo que está dentro do componente. 
 Chamamos também de interpolação de variável.
+- templateUrl: 'app.component.html' - faz a referência do html externo;
