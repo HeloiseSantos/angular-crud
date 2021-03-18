@@ -28,3 +28,7 @@ PASTAS
 - src: pasta onde iremos criar outros componentes;
 
 -index.html: chama o componente principal da aplicação e partir deste componente, todos os outros serão carregados através desta única página, por isso chamamos de SINGLE PAGE APPLICATION;
+
+AULA "HTML DO APPCOMPONENT
+- {{ nomeDaVariavel }} - double mustache - chama a variável declarada no component.ts. Ele irá interpretar o valor do nome e substituir pelo que está dentro do componente. 
+Chamamos também de interpolação de variável.
