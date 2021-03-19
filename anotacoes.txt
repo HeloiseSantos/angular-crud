@@ -33,3 +33,9 @@ AULA "HTML DO APPCOMPONENT
 - {{ nomeDaVariavel }} - double mustache - chama a variável declarada no component.ts. Ele irá interpretar o valor do nome e substituir pelo que está dentro do componente. 
 Chamamos também de interpolação de variável.
 - templateUrl: 'app.component.html' - faz a referência do html externo;
+
+AULA "INSTALAR OS COMPONENTES DO MATERIAL DESIGN"
+- ng add @angular/material - instala componentes do Angular Material
+    Será necessário selecionar o esquema de cores que você gostaria de criar o template;
+    Aplicar tipografia na forma global? y
+    Animações? y
