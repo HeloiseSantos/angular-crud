@@ -39,3 +39,10 @@ AULA "INSTALAR OS COMPONENTES DO MATERIAL DESIGN"
     Será necessário selecionar o esquema de cores que você gostaria de criar o template;
     Aplicar tipografia na forma global? y
     Animações? y
+
+AULA "COMPONENTE CABEÇALHO"
+- ng g c caminhoOuNomeDoComponente - cria componente;
+- usar o nome do selector no .ts do componente para chamar o componente em outras páginas; Ex.: <app-header></app-header> no arquivo app.component.html;
+- Importar MatToolbarModule no app.module e usar <mat-toolbar> - serve para criar container para header, títulos ou ações;
+- mat-elevation-z4 - é uma classe do material que eleva o elemento no eixo z para dar um efeito de elevação e sombra;
+- <i class="material-icons"></i> para indicar que você irá inserir um ícone;
