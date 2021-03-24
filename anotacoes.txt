@@ -46,3 +46,11 @@ AULA "COMPONENTE CABEÇALHO"
 - Importar MatToolbarModule no app.module e usar <mat-toolbar> - serve para criar container para header, títulos ou ações;
 - mat-elevation-z4 - é uma classe do material que eleva o elemento no eixo z para dar um efeito de elevação e sombra;
 - <i class="material-icons"></i> para indicar que você irá inserir um ícone;
+
+AULA "COMPONENTE NAVEGAÇÃO"
+-propriedades da mat-sidenav (necessárias para que apareça na tela):
+    - mode="side" 
+    - opened - aberto
+    - fixedInViewPort="true"
+    - fixedTopGap="64" - dá um gap (espaço para baixo) para não ficar em cima de outra aplicação
+    - mat-list-item no <a> - aplica estilo à navegação
