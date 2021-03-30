@@ -54,3 +54,20 @@ AULA "COMPONENTE NAVEGAÇÃO"
     - fixedInViewPort="true"
     - fixedTopGap="64" - dá um gap (espaço para baixo) para não ficar em cima de outra aplicação
     - mat-list-item no <a> - aplica estilo à navegação
+
+AULA "ELEMENTOS DO ANGULAR #01"
+- Componentes:
+    - HTML home.component.html
+    - CSS home.component.css
+    - TS home.component.ts
+    - <app-home></app-home>
+- Diretivas: existem 2 tipos - Attribute Directives e Structural Directives
+    - Atributo: Altera a aparência e o comportamento de um elemento, componente ou outra diretiva.
+    - Estrutural: Altera o layout adicionando e removendo elementos da DOM.
+    - *** Property Binding ***
+    - *** Event Binding ***
+    - *** One Way Data Binding ***
+    - *** Two Way Data Binding ***
+- Rotas: Angular router
+    - Router Outlet
+- Pipes: interpolação do que está dentro do double mustache {{ produto.vencimento | date }}
