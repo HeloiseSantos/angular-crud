@@ -71,3 +71,17 @@ AULA "ELEMENTOS DO ANGULAR #01"
 - Rotas: Angular router
     - Router Outlet
 - Pipes: interpolação do que está dentro do double mustache {{ produto.vencimento | date }}
+
+AULA "ELEMENTOS DO ANGULAR #02"
+- Observables:
+    - Programação Reativa - ReactiveX - import { Observable } from "rxjs";
+    - Código Proativo !== Código Reativo:
+        - Código Proativo: fica o tempo inteiro consumindo memória, pois sempre pergunta se existe algo para ser feito, portanto, sempre sendo executado.
+        - Código Reativo: o código só é chamado de forma reativa, é necessário que algo ocorra (evento externo) para que ele seja chamado e executado.
+    - Padrão Observer:
+        - Padrão orientado a Evento.
+        - Subject: monitorar e detectar quando o evento acontece.
+        - Observer: códigos que estão interessados em um determinado evento.
+    - callbacks: função com parâmetro para outra função.
+    - Promisses: também usa callbacks, mas tem a capacidade de encadear várias chamadas. Pode ser usada apenas uma única vez.
+    - Observables: reusável, stream de dados, operadores.
