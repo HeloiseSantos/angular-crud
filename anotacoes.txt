@@ -91,3 +91,8 @@ AULA "ELEMENTOS DO ANGULAR #03"
     - ng g s services/product
     - Injeção de dependência: é um padrão no qual a classe recebe as dependências de uma fonte externa ao invés de criar por conta própria.
     - https://angular.io/guide/hierarchical-dependency-injection
+
+AULA "COMPONENTE INÍCIO (HOME)
+- estrtura do projeto:
+    - dentro da pasta components: tudo que puder ser utilizado em mais de uma tela.
+    - dentro da pasta view: sempre que tenho uma página inteira, que não será utilizada em outros lugares.

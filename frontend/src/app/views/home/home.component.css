@@ -1,0 +1,14 @@
+.home {
+    text-align: center;
+}
+
+.home .title {
+    font-size: 3rem; /* unidade relativa que sempre fazendo uma relação com o raiz da página. Exemplo: 3 * valor da fonte padrão, mantendo proporção - 3 * 16px */
+    font-weight: 300;
+    line-height: 1.2;
+
+}
+
+.home .subtitle {
+    font-size: 1.1rem;
+}
