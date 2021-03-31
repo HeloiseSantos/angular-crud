@@ -85,3 +85,9 @@ AULA "ELEMENTOS DO ANGULAR #02"
     - callbacks: função com parâmetro para outra função.
     - Promisses: também usa callbacks, mas tem a capacidade de encadear várias chamadas. Pode ser usada apenas uma única vez.
     - Observables: reusável, stream de dados, operadores.
+
+AULA "ELEMENTOS DO ANGULAR #03"
+- Services: classes que têm como principal objetivo organizar e compartilhar métodos e dados entre componentes
+    - ng g s services/product
+    - Injeção de dependência: é um padrão no qual a classe recebe as dependências de uma fonte externa ao invés de criar por conta própria.
+    - https://angular.io/guide/hierarchical-dependency-injection
