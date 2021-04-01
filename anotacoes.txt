@@ -101,3 +101,7 @@ AULA "NAVEGANDO ENTRE COMPONENTES"
     - <router-outlet></router-outlet> chama sistema de rotas (ponto que será substituído entre as telas de navegação)
     - app-routing.module.ts: onde serão trabalhadas as rotas.
     - ctrl + espaço - code complete
+
+AULA "DIRETIVAS NA PRÁTICA #01"
+    - Diretiva de atributo: capaz de Alterar comportamento e estilo de um componente.
+        - para criar uma diretiva: ng g d directives/red
