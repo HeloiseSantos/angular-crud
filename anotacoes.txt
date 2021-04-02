@@ -117,4 +117,5 @@ AULA "NAVEGAR PARA TELA DE CRIAR PRODUTOS"
     - mat-raised-button: no HTML aplica estilo ao button.
     - router: para fazer a navegação de um componente para outro.
     - no construtor - private router: Router - faz com que a rota seja injetada pelo Angular. Uma vez que o Angular percebeu que, dentro do construtor do componente, eu declarei que vou precisar de um router e o tipo de atributo que eu quero receber, ele será capaz de fornecer um router sem que eu precise me preocupar em instanciar um router, pois quem é responsável por criar os componentes e instanciar a classe é o Angular. - this.router.navigate(['/products/create']) - esta é a rota para onde eu quero que o componente navegue.
+    - Ver conceitos de injeção de dependência.
 
