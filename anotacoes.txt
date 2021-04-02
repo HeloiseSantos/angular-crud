@@ -108,3 +108,7 @@ AULA "DIRETIVAS NA PRÁTICA #01" E "DIRETIVAS NA PRÁTICA #02"
     - Diretiva estrtural:  
         - para criar, é da mesma forma: ng g d directives/for
         - implements OnInit: ciclo de vida de inicialização.
+
+AULA "BINDINGS"
+    - Binding de eventos: um evento, uma ação, chamará o método para ser executado. Exemplo: <button (click)="fazerAlgo()">Fazer algo</button>
+    - Binding de atributo: o valor da variável dentro do id será atribuído o que está dentro do component.ts. Exemplo: <p [id]="propLegal">Olá, mundo!</p>
