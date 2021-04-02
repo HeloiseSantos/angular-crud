@@ -102,6 +102,9 @@ AULA "NAVEGANDO ENTRE COMPONENTES"
     - app-routing.module.ts: onde serão trabalhadas as rotas.
     - ctrl + espaço - code complete
 
-AULA "DIRETIVAS NA PRÁTICA #01"
-    - Diretiva de atributo: capaz de Alterar comportamento e estilo de um componente.
+AULA "DIRETIVAS NA PRÁTICA #01" E "DIRETIVAS NA PRÁTICA #02"
+    - Diretiva de atributo: capaz de alterar comportamento e estilo de um componente.
         - para criar uma diretiva: ng g d directives/red
+    - Diretiva estrtural:  
+        - para criar, é da mesma forma: ng g d directives/for
+        - implements OnInit: ciclo de vida de inicialização.
