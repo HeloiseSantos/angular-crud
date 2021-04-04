@@ -14,7 +14,8 @@ export class ProductService {
     this.snackBar.open(msg, 'OK', {
       duration: 4000,
       horizontalPosition: "right",
-      verticalPosition: "top"
+      verticalPosition: "top",
+      panelClass: "show-message"
     })
   }
 }

@@ -18,3 +18,13 @@ body {
 .v-middle {
     vertical-align: middle;
 }
+
+/* Snack Bar */
+.show-message {
+    background-color: #7489ff;
+}
+
+.show-message span {
+    font-size: 1.125em;
+    color: #FFF;
+}
