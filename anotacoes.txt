@@ -120,5 +120,6 @@ AULA "NAVEGAR PARA TELA DE CRIAR PRODUTOS"
     - Ver conceitos de injeção de dependência.
 
 AULA "PRODUTO MODELO"
-    - 
+    - Cria-se um model para ter produtos sempre com características padrões que precisam ser definidas.
+    - *** ver sobre export interface ***
 
