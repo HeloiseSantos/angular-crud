@@ -123,3 +123,11 @@ AULA "PRODUTO MODELO"
     - Cria-se um model para ter produtos sempre com características padrões que precisam ser definidas.
     - *** ver sobre export interface ***
 
+AULA "PRODUTO SERVICE"
+    - Por que existe um service dentro do Angular?
+        - Para que um componente acesse um backend, para ter requisições http, lógica, etc.
+    - Para criar um service: ng g s components/product/product
+    - No @Injectable({ providedIn: 'root' }) 
+        - o @Injectable indica que essa classe pode ser injetada em outras classes.
+        - O providedIn: 'root' significa que esse service é um singleton, ou seja, uma classe que tem uma única instância compartilhada.
+
