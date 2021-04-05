@@ -131,3 +131,13 @@ AULA "PRODUTO SERVICE"
         - o @Injectable indica que essa classe pode ser injetada em outras classes.
         - O providedIn: 'root' significa que esse service é um singleton, ou seja, uma classe que tem uma única instância compartilhada.
 
+AULA "MÉTODO CRIAR PRODUTO"
+    - cliente http - precisamos fazer uma requisição http para nosso backend, que, neste projeto, roda a partir do json-server. Já temos uma API pronta para utilizar, que, neste caso é: http://localhost:3001. Usaremos isso para que possamos inserir novos projeto no backend.
+    - Observables
+    - Utilizaremos o rxjs de forma reativa, de modo que temos um Subject, que irá monitorar o evento, no caso o próprio Observable, e iremos registrar, fazer um Subscribe de uma função para ser notificado sempre que uma resposta http chegar. Ou seja, uma vez que um client http envia uma requisição, ele não irá devolver pra gente uma resposta, mas sim um Observable e esse Observable irá subescrever uma função para ser notificado quando uma resposta chegar.
+    - Necessário importar o HttpClientModule para ter os serviços disponibilizados pelo Angular.
+    - No service, precisamos injetar o HttpClient para que possamos usar ele em nossa funcionalidade.
+    - Criar uma função - create() - que será a função responsável por inserir no backend um novo produto. Feito isso, temos a possibilidade de mandar uma requisição http para o backend
+    - Requisição do tipo post() - Inserir um novo item no backend. Este post irá retornar um Observable do tipo product e neste caso o post precisa retornar um Observable desse tipo também.
+    - No método createProduct() no component.ts é onde iremos disparar a chamada para o método que criamos no service.
+    - No método subscribe() é notificado quando a resposta chegar. Passo uma função arrow e apenas quando chegar a resposta eu mostro que o produto foi adicionado com sucesso ou não. Posso também adicionar a parte de navegação.
