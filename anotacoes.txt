@@ -146,3 +146,7 @@ AULA "FORMULÁRIO CRIAR PRODUTO"
     - matInput - diretiva que irá mexer no estilo e comportamento.
     - Precisamos estabelecer que o input de cada elemento altere a propriedade que corresponde: Two-way data bindin - [(ngModel)]="product.name" - diretiva não estrutural
     - É importante ter o atributo name="" dentro do input
+
+AULA "COMPONENTE OBTER PRODUTO"
+    - Observable<Product[]> - Irá retornar um array de produtos.
+    - Requisição do tipo get() - ler as informações do backend.
