@@ -150,3 +150,6 @@ AULA "FORMULÁRIO CRIAR PRODUTO"
 AULA "COMPONENTE OBTER PRODUTO"
     - Observable<Product[]> - Irá retornar um array de produtos.
     - Requisição do tipo get() - ler as informações do backend.
+
+AULA "EXIBINDO OS PRODUTOS COM *NGFOR"
+    - Diretiva estrutural
