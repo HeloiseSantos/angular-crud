@@ -152,4 +152,8 @@ AULA "COMPONENTE OBTER PRODUTO"
     - Requisição do tipo get() - ler as informações do backend.
 
 AULA "EXIBINDO OS PRODUTOS COM *NGFOR"
-    - Diretiva estrutural
+    - Diretiva estrutural - *NGFOR
+
+AULA "GERANDO COMPONENTE TABELA"
+    - material angular schematics - ajuda dentro do material a criar componentes seguindo alguns modelos.
+    - Table schematic - ng generate @angular/material:table <component-name>
