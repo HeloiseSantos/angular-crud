@@ -141,3 +141,8 @@ AULA "MÉTODO CRIAR PRODUTO"
     - Requisição do tipo post() - Inserir um novo item no backend. Este post irá retornar um Observable do tipo product e neste caso o post precisa retornar um Observable desse tipo também.
     - No método createProduct() no component.ts é onde iremos disparar a chamada para o método que criamos no service.
     - No método subscribe() é notificado quando a resposta chegar. Passo uma função arrow e apenas quando chegar a resposta eu mostro que o produto foi adicionado com sucesso ou não. Posso também adicionar a parte de navegação.
+
+AULA "FORMULÁRIO CRIAR PRODUTO"
+    - matInput - diretiva que irá mexer no estilo e comportamento.
+    - Precisamos estabelecer que o input de cada elemento altere a propriedade que corresponde: Two-way data bindin - [(ngModel)]="product.name" - diretiva não estrutural
+    - É importante ter o atributo name="" dentro do input
