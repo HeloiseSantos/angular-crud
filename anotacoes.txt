@@ -160,3 +160,20 @@ AULA "GERANDO COMPONENTE TABELA"
 
 AULA "ENTENDENDO COMPONENTE GERADO"
     - Componente gerado a partir do schematics
+
+AULA "TABELA PRODUTOS"
+    - [dataSource]="products" - Property binding - no HTML vincula o products do .ts como a origem de dados para a tabela.
+    - No preço podemos aplicar um pipe:
+        - {{products.price | currency: 'BRL'}} - currency indica que você quer formatar o dado para moeda e 'BRL' significa que gostaríamos de formatar para a moeda do Brasil.
+    - Para inclusão do ponto e vírgula no lugar correto do valor do preço, podemos fazer o seguinte:
+        - no app.module:
+            - importar:
+                import localePt from '@angular/common/locales/pt';
+                import { registerLocaleData } from '@angular/common';
+            - chamar o registerLocaleData(localePt);
+            - no providers:
+                providers: [{
+                    provide: LOCALE_ID,
+                    useValue: 'pt-BR'
+                }],
+    - *** Ver sobre json-server pagination *** - paginação no json-server (backend)
