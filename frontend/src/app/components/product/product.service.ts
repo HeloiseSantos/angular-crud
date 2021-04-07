@@ -32,4 +32,9 @@ export class ProductService {
   read(): Observable<Product[]> {
     return this.http.get<Product[]>(this.baseUrl)
   }
+
+  readById(id: string) {
+    const url = `${this.baseUrl}/${id}`;
+    return this.http.get<Product>(url);
+  }
 }
