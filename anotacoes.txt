@@ -157,3 +157,6 @@ AULA "EXIBINDO OS PRODUTOS COM *NGFOR"
 AULA "GERANDO COMPONENTE TABELA"
     - material angular schematics - ajuda dentro do material a criar componentes seguindo alguns modelos.
     - Table schematic - ng generate @angular/material:table <component-name>
+
+AULA "ENTENDENDO COMPONENTE GERADO"
+    - Componente gerado a partir do schematics
