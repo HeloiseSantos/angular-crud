@@ -177,3 +177,5 @@ AULA "TABELA PRODUTOS"
                     useValue: 'pt-BR'
                 }],
     - *** Ver sobre json-server pagination *** - paginação no json-server (backend)
+
+AULA "ADICIONANDO COLUNA AÇÕES"
