@@ -20,11 +20,16 @@ body {
 }
 
 /* Snack Bar */
-.show-message {
-    background-color: #7489ff;
+.message-sucess {
+    background-color: #28A745;
 }
 
-.show-message span {
+.message-error {
+    background-color: #E35E6B;
+}
+
+.message-sucess span,
+.message-error span {
     font-size: 1.125em;
     color: #FFF;
 }
