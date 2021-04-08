@@ -96,3 +96,87 @@ AULA "COMPONENTE INÍCIO (HOME)
 - estrtura do projeto:
     - dentro da pasta components: tudo que puder ser utilizado em mais de uma tela.
     - dentro da pasta view: sempre que tenho uma página inteira, que não será utilizada em outros lugares.
+
+AULA "NAVEGANDO ENTRE COMPONENTES"
+    - <router-outlet></router-outlet> chama sistema de rotas (ponto que será substituído entre as telas de navegação)
+    - app-routing.module.ts: onde serão trabalhadas as rotas.
+    - ctrl + espaço - code complete
+
+AULA "DIRETIVAS NA PRÁTICA #01" E "DIRETIVAS NA PRÁTICA #02"
+    - Diretiva de atributo: capaz de alterar comportamento e estilo de um componente.
+        - para criar uma diretiva: ng g d directives/red
+    - Diretiva estrtural:  
+        - para criar, é da mesma forma: ng g d directives/for
+        - implements OnInit: ciclo de vida de inicialização.
+
+AULA "BINDINGS"
+    - Binding de eventos: um evento, uma ação, chamará o método para ser executado. Exemplo: <button (click)="fazerAlgo()">Fazer algo</button>
+    - Binding de atributo: o valor da variável dentro do id será atribuído o que está dentro do component.ts. Exemplo: <p [id]="propLegal">Olá, mundo!</p>
+
+AULA "NAVEGAR PARA TELA DE CRIAR PRODUTOS"
+    - mat-raised-button: no HTML aplica estilo ao button.
+    - router: para fazer a navegação de um componente para outro.
+    - no construtor - private router: Router - faz com que a rota seja injetada pelo Angular. Uma vez que o Angular percebeu que, dentro do construtor do componente, eu declarei que vou precisar de um router e o tipo de atributo que eu quero receber, ele será capaz de fornecer um router sem que eu precise me preocupar em instanciar um router, pois quem é responsável por criar os componentes e instanciar a classe é o Angular. - this.router.navigate(['/products/create']) - esta é a rota para onde eu quero que o componente navegue.
+    - Ver conceitos de injeção de dependência.
+
+AULA "PRODUTO MODELO"
+    - Cria-se um model para ter produtos sempre com características padrões que precisam ser definidas.
+    - *** ver sobre export interface ***
+
+AULA "PRODUTO SERVICE"
+    - Por que existe um service dentro do Angular?
+        - Para que um componente acesse um backend, para ter requisições http, lógica, etc.
+    - Para criar um service: ng g s components/product/product
+    - No @Injectable({ providedIn: 'root' }) 
+        - o @Injectable indica que essa classe pode ser injetada em outras classes.
+        - O providedIn: 'root' significa que esse service é um singleton, ou seja, uma classe que tem uma única instância compartilhada.
+
+AULA "MÉTODO CRIAR PRODUTO"
+    - cliente http - precisamos fazer uma requisição http para nosso backend, que, neste projeto, roda a partir do json-server. Já temos uma API pronta para utilizar, que, neste caso é: http://localhost:3001. Usaremos isso para que possamos inserir novos projeto no backend.
+    - Observables
+    - Utilizaremos o rxjs de forma reativa, de modo que temos um Subject, que irá monitorar o evento, no caso o próprio Observable, e iremos registrar, fazer um Subscribe de uma função para ser notificado sempre que uma resposta http chegar. Ou seja, uma vez que um client http envia uma requisição, ele não irá devolver pra gente uma resposta, mas sim um Observable e esse Observable irá subescrever uma função para ser notificado quando uma resposta chegar.
+    - Necessário importar o HttpClientModule para ter os serviços disponibilizados pelo Angular.
+    - No service, precisamos injetar o HttpClient para que possamos usar ele em nossa funcionalidade.
+    - Criar uma função - create() - que será a função responsável por inserir no backend um novo produto. Feito isso, temos a possibilidade de mandar uma requisição http para o backend
+    - Requisição do tipo post() - Inserir um novo item no backend. Este post irá retornar um Observable do tipo product e neste caso o post precisa retornar um Observable desse tipo também.
+    - No método createProduct() no component.ts é onde iremos disparar a chamada para o método que criamos no service.
+    - No método subscribe() é notificado quando a resposta chegar. Passo uma função arrow e apenas quando chegar a resposta eu mostro que o produto foi adicionado com sucesso ou não. Posso também adicionar a parte de navegação.
+
+AULA "FORMULÁRIO CRIAR PRODUTO"
+    - matInput - diretiva que irá mexer no estilo e comportamento.
+    - Precisamos estabelecer que o input de cada elemento altere a propriedade que corresponde: Two-way data bindin - [(ngModel)]="product.name" - diretiva não estrutural
+    - É importante ter o atributo name="" dentro do input
+
+AULA "COMPONENTE OBTER PRODUTO"
+    - Observable<Product[]> - Irá retornar um array de produtos.
+    - Requisição do tipo get() - ler as informações do backend.
+
+AULA "EXIBINDO OS PRODUTOS COM *NGFOR"
+    - Diretiva estrutural - *NGFOR
+
+AULA "GERANDO COMPONENTE TABELA"
+    - material angular schematics - ajuda dentro do material a criar componentes seguindo alguns modelos.
+    - Table schematic - ng generate @angular/material:table <component-name>
+
+AULA "ENTENDENDO COMPONENTE GERADO"
+    - Componente gerado a partir do schematics
+
+AULA "TABELA PRODUTOS"
+    - [dataSource]="products" - Property binding - no HTML vincula o products do .ts como a origem de dados para a tabela.
+    - No preço podemos aplicar um pipe:
+        - {{products.price | currency: 'BRL'}} - currency indica que você quer formatar o dado para moeda e 'BRL' significa que gostaríamos de formatar para a moeda do Brasil.
+    - Para inclusão do ponto e vírgula no lugar correto do valor do preço, podemos fazer o seguinte:
+        - no app.module:
+            - importar:
+                import localePt from '@angular/common/locales/pt';
+                import { registerLocaleData } from '@angular/common';
+            - chamar o registerLocaleData(localePt);
+            - no providers:
+                providers: [{
+                    provide: LOCALE_ID,
+                    useValue: 'pt-BR'
+                }],
+    - *** Ver sobre json-server pagination *** - paginação no json-server (backend)
+
+AULA "NOVOS MÉTODOS EM PRODUTO SERVICE"
+    - método put() - atualiza dados
